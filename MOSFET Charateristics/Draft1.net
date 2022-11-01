@@ -1,0 +1,12 @@
+* C:\Users\USER\Documents\LTspiceXVII\LTspice-Projects-\Draft1.asc
+R2 N004 N003 220
+R1 N002 N001 10
+M1 N001 N004 0 0 NMOS
+VGS N003 0 10V
+VDS N002 0 30
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\USER\Documents\LTspiceXVII\lib\cmp\standard.mos
+.dc VDS 0 30 0.1 VGS 0 10 2
+.backanno
+.end
